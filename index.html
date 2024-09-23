@@ -26,17 +26,17 @@
     </tbody>
   </table>
   
-  <a href="formulirtambah.html">tambah namabunga</a>
+  <a href="namabunga.html">tambah namabunga</a>
   
   <script type="module">
-    import { ambilDaftarBunga } from './main.js';
+    import { ambilNamaBunga } from './main.js';
     
     $(document).ready(async function() {
-     let elemenDaftarBunga = $("#daftar-bunga > tbody");
+     let elemenNamaBunga = $("#daftar-bunga > tbody");
      let daftarSiswa = await ambilDaftarBunga();
      
      daftarSiswa.forEach((data)=> {
-       elemenDaftarBunga.append(
+       elemenNamaBunga.append(
          "<tr>" +
          "<td>" + "</td>" +
          "<td>" + data.namabunga + "</td>" +

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <h1>menambah data bunga</h1>
+  <h1>menambah nama bunga</h1>
 
   <form class="mb-3">
     <div class=mb-3>
@@ -26,7 +26,7 @@
     </div>
   </form>
 
-  <a href="index.html">kembali ke daftar bunga</a>
+  <a href="index.html">kembali ke namabunga</a>
 
   <script type="module">
     import { tambahBunga } from "./main.js";
@@ -39,7 +39,7 @@
         // ambil data formulir
         let nama = $("#inputnama").val()
 
-        await tambahBunga(nama,)
+        await tambahNamaBunga(nama,)
         window.location.href = "index.html"
       })
     })
