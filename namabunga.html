@@ -29,7 +29,7 @@
   <a href="index.html">kembali ke daftar bunga</a>
 
   <script type="module">
-    import { tambahSiswa } from "./main.js";
+    import { tambahBunga } from "./main.js";
 
     $(document).ready(async function() {
       // ketika tombol tambah di pencet
@@ -39,7 +39,7 @@
         // ambil data formulir
         let nama = $("#inputnama").val()
 
-        await tambahSiswa(nama, alamat)
+        await tambahBunga(nama,)
         window.location.href = "index.html"
       })
     })
