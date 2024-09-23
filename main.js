@@ -29,25 +29,25 @@ const basisdata = getFirestore(aplikasi)
 
 export async function ambilNamaBunga() {
   const refDokumen = collection(basisdata, "Namabunga");
-  const kueri = query(refDokumen, orderBy("nama"));
+  const kueri = query(refDokumen, orderBy("Nama"));
   const cuplikanKueri = await getDocs(kueri);
   
   let hasilKueri = []; 
   cuplikanKueri.forEach((dokumen) => {
     hasilKueri.push({
       id: dokumen.id,
-      nama: dokumen.data().nama,
+      Nama: dokumen.data().Nama
     })
   })
   
   return hasilKueri;
 }
 
-export async function tambahNamaBunga(nama,){
+export async function tambahNamaBunga(Nama){
   try {
   // menyimpan data ke firebase
   const refDokumen = await addDoc(collection(basisdata, "namabunga"), {
-    nama: nama,
+    Nama: Nama,
   })
   
   // menampilkan pesan berhasil

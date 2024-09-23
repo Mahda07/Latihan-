@@ -33,13 +33,13 @@
     
     $(document).ready(async function() {
      let elemenNamaBunga = $("#daftar-bunga > tbody");
-     let daftarSiswa = await ambilDaftarBunga();
+     let namaBunga = await ambilNamaBunga();
      
-     daftarSiswa.forEach((data)=> {
+     namaBunga.forEach((data)=> {
        elemenNamaBunga.append(
          "<tr>" +
          "<td>" + "</td>" +
-         "<td>" + data.namabunga + "</td>" +
+         "<td>" + data.nama + "</td>" +
          "<td>" + "</td>" +
          "<td>" + "</td>" +
          "</tr>"
