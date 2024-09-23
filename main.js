@@ -46,7 +46,7 @@ export async function ambilNamaBunga() {
 export async function tambahNamaBunga(Nama){
   try {
   // menyimpan data ke firebase
-  const refDokumen = await addDoc(collection(basisdata, "namabunga"), {
+  const refDokumen = await addDoc(collection(basisdata, "Namabunga"), {
     Nama: Nama,
   })
   
