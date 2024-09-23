@@ -14,7 +14,7 @@
 <body>
   <h1>nama bunga</h1>
 
-  <table class="table" id="daftar-siswa">
+  <table class="table" id="daftar-bunga">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -32,11 +32,11 @@
     import { ambilDaftarBunga } from './main.js';
     
     $(document).ready(async function() {
-     let elemenDaftarBunga = $("#daftar-siswa > tbody");
-     let daftarSiswa = await ambilDaftarSiswa();
+     let elemenDaftarBunga = $("#daftar-bunga > tbody");
+     let daftarSiswa = await ambilDaftarBunga();
      
      daftarSiswa.forEach((data)=> {
-       elemenDaftarSiswa.append(
+       elemenDaftarBunga.append(
          "<tr>" +
          "<td>" + "</td>" +
          "<td>" + data.namabunga + "</td>" +
